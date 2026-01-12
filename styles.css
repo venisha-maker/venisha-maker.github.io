@@ -70,3 +70,55 @@ footer {
     background-color: #2a4d69;
     color: white;
 }
+
+/* -- Transitions and Hover --*/
+
+nav a {
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(52, 52, 180);
+    color:L white;
+}
+
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margi-top: 20px;
+}
+
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+thead td, tfoot td {
+    border: 1px solid #333;
+    padding: 10px;
+
+}
+
+tfoot td {
+    text-align: center;
+    font-style:italic;
+    background-color: rgba(52, 52180, 0.15);
+
+}
+
+main section {
+    transition: transform 0.3s ease-in;
+ }
+  
+main section:hover {
+        transform: scale(1.02);
+    }
