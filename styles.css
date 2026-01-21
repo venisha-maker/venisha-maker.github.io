@@ -122,3 +122,122 @@ main section {
 main section:hover {
         transform: scale(1.02);
     }
+
+    /** FlexBox Layout **/
+
+    .nav-flex {
+        display: flex;
+        justify-content: center;
+        background: #333;
+    }
+
+    .nav-flex ul {
+
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-flex li {
+
+        margin: 0 15px;
+    }
+
+    .nav-flex a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        background: #333;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-flex a:hover {
+        background: #555;
+    }
+
+    .main-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .contact-flex {
+        display: flex;
+        f;ex-direction: column;
+        gap: 15px;
+        background: qhite;
+        padding: 0 20px;
+        border-radius: 6px;
+    }
+
+    /** Form **/
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px
+    }
+
+    input[type=text];
+    input[type=email];
+    textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #555;
+}
+
+/* RESPONSIVE DESIGN      */
+
+/* Phones */
+@media (min-width: 480px) {
+    .main-flex {
+        flex-direction: column;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .main-flex {
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .main-flex {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+
+
+
+    
+    
+
